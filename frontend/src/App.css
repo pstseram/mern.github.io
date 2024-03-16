@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+.swiper-pagination-bullet{
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px sloid #181a1e !important;
+  opacity: 100% !important;
+  background: #524faea7 !important; 
+}
+
+.swiper-pagination-bullet-active{
+  background: #0067ff !important;
+  border: none !important;
+}
+.swiper{
+ padding-bottom: 70px !important;
+}
+
+.swiper-slide.swiper-slide-next{
+  background: #0067ff;
+  border-radius: 12px;
+  box-shadow: 0px 20px 70px rgba(0, 103, 255, 0.3) !important;
+}
+
+.swiper-slide.swiper-slide-next h4,
+.swiper-slide.swiper-slide-next p{
+  color: #fff !important;
+}
+
+.swiper-pagination{
+  top: 90% !important;
+}
+
+.sticky__header{
+  width: 100%; 
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: rgb(224, 220, 220);
+  box-shadow: 3px 3px -8px 3px #ddd;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navigation{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00000084;
+    display: none;
+    }
+    .custom-datepicker {
+      background-color: #ffffff; /* Set background color to white */
+      border: 1px solid #ffffff; /* Add border */
+      color: #ffffff; /* Set text color */
+    }
+    
+
+    .menu {
+      width: 15rem;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #ffffff;
+      z-index: 200;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 30px;   
+      }
+
+      .show__menu{
+        display: block;
+        }
+      }
+
+      .contact-us-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f1e5e5;
+
+      }
+      
+      .contact-header {
+        text-align: center;
+      }
+      
+      .contact-header h1 {
+        color: #000; /* Blue color for headings */
+      }
+      
+      .contact-methods {
+        margin-top: 20px;
+      }
+      
+      .contact-method {
+        margin-bottom: 20px;
+      }
+      
+      .contact-method strong {
+        color: #333; /* Dark color for strong headings */
+      }
+      
+      .visit-us,
+      .office-hours,
+      .social-media,
+      .emergency-contact {
+        margin-top: 20px;
+      }
+      
+      .closing-message {
+        margin-top: 20px;
+        text-align: center;
+        font-style: italic;
+        color: #555;
+      }
+      
+
+      /* Home.css */
+
+.about-us-section {
+  background: linear-gradient(to bottom, #f8f8f8, #e2e2e2, #d0d0d0);
+}
+
+.about-us-container {
+  text-align: center; /* Adjust as needed */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-us-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-us-paragraph {
+  font-size: 1.155rem;
+  line-height: 2;
+  color: #000000;
+  margin-top: 0;
+}
+
+.key-features-heading {
+  font-size: 1.55rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.key-features-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0.75rem;
+  color: #555;
+}
+
+.key-features-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.key-features-list li::before {
+  content: '\25A0'; /* Unicode character for square */
+  position: absolute;
+  left: 0;
+  color: #555;
+}
+
+.cta-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+      
