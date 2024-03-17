@@ -41,7 +41,7 @@ const Home = () => {
             <h2 className="text-[36px] leading-[56px] lg:text-[40px] lg:leading-[54px] font-[900] text-white">
               96% 
             </h2>
-            <span className="w-[170px] h-3 bg-purpleColor rounded-full block mt-[-10px]"></span>
+            <span className="w-[160px] h-3 bg-purpleColor rounded-full block mt-[-10px]"></span>
             <p className="text__para text-white">Positive Feedback</p>
           </div>
           

@@ -194,4 +194,16 @@ body{
   color: #333;
 }
 
+.show__menu {
+  display: block; /* Or any style to show the menu */
+}
+.about-us-paragraph {
+  text-align: justify; /* Justify text to distribute it evenly between margins */
+  padding: 0 1rem; /* Adjust padding to evenly distribute text */
+}
+.text__para {
+  text-align: justify; /* Justify text to distribute it evenly between margins */
+  padding: 0 1rem; /* Adjust padding to evenly distribute text */
+}
+
       
