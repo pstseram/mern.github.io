@@ -1,4 +1,4 @@
-import React, { useRef, useContext, useState, useEffect } from 'react';
+import React, { useRef, useContext } from 'react';
 import logo from '../../assets/images/logo.png';
 import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
@@ -27,27 +27,8 @@ const navLinks = [
 const Header = () => {
   const menuRef = useRef(null);
   const { user, role, token } = useContext(authContext);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) { // Assuming 768px as mobile breakpoint
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    if (window.innerWidth < 768) { // Assuming 768px as mobile breakpoint
-      setIsMobileMenuOpen(!isMobileMenuOpen);
-    }
-  };
+  const toggleMenu = () => menuRef.current.classList.toggle('show__menu');
 
   return (
     <header className="header flex items-center bg-gray-300">
@@ -61,7 +42,7 @@ const Header = () => {
           </div>
 
           {/* ======== menu =============*/}
-          <div className={`navigation ${isMobileMenuOpen ? 'show__menu' : ''}`} ref={menuRef} onClick={toggleMenu}>
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu flex items-center gap-[2.7rem]">
               {navLinks.map((link, index) => (
                 <li key={index}>
